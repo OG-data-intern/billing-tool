@@ -8,8 +8,8 @@ st.set_page_config(
     layout='centered',  # Can be wide
     initial_sidebar_state='auto',  # Best to have auto for mobile
     menu_items={
-        'Report a bug': 'mailto:emlyn.evans@finclear.com.au',
-        'Get help': 'mailto:emlyn.evans@finclear.com.au',
+        'Report a bug': 'mailto:alexander.heintze@finclear.com.au',
+        'Get help': 'mailto:alexander.heintze@finclear.com.au',
         'About': 'https://finclear.com.au/'
     }
 )
@@ -19,7 +19,7 @@ st.set_page_config(
 
 # Based on https://discuss.streamlit.io/t/pip-installing-from-github/21484/5
 try:
-    import adviser_assist
+    import billing_tool_private
 
 # This block executes only on the first run when your package isn't installed
 except ModuleNotFoundError as e:
@@ -29,7 +29,7 @@ except ModuleNotFoundError as e:
     )
 
     subprocess.Popen([
-        f"{sys.executable} -m pip install git+https://${{github_token}}@github.com/FinClear-Data/adviser-assist.git"],
+        f"{sys.executable} -m pip install git+https://${{github_token}}@github.com/OG-Data-Intern/billing-tool-private.git"],
         shell=True)
 
     # Wait for subprocess to install package before running your actual code below
@@ -42,4 +42,4 @@ except ModuleNotFoundError as e:
     st.experimental_rerun()
 
 # Run the app!
-adviser_assist.authenticate()
+billing_tool_private.authenticate()
