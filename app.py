@@ -3,16 +3,16 @@ import sys
 import time
 import subprocess
 
-st.set_page_config(
-    page_title='FinClear Streamlit App',
-    layout='centered',  # Can be wide
-    initial_sidebar_state='auto',  # Best to have auto for mobile
-    menu_items={
-        'Report a bug': 'mailto:alexander.heintze@finclear.com.au',
-        'Get help': 'mailto:alexander.heintze@finclear.com.au',
-        'About': 'https://finclear.com.au/'
-    }
-)
+# st.set_page_config(
+#     page_title='FinClear Streamlit App',
+#     layout='centered',  # Can be wide
+#     initial_sidebar_state='auto',  # Best to have auto for mobile
+#     menu_items={
+#         'Report a bug': 'mailto:alexander.heintze@finclear.com.au',
+#         'Get help': 'mailto:alexander.heintze@finclear.com.au',
+#         'About': 'https://finclear.com.au/'
+#     }
+# )
 
 # Import all private packages here at the start of the app boot.
 # You must "Reboot App" if you add more dependencies
