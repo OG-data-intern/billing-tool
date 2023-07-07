@@ -29,7 +29,7 @@ except ModuleNotFoundError as e:
     )
 
     subprocess.Popen([
-        f"{sys.executable} -m pip install git+https://${{github_token}}@github.com/OG-Data-Intern/billing-tool-private.git"],
+        f"{sys.executable} -m pip install git+https://${{github_token}}@github.com/OG-data-intern/billing-tool-private.git"],
         shell=True)
 
     # Wait for subprocess to install package before running your actual code below
